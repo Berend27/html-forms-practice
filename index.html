@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Form</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <style>
+        main {
+            margin: 16px 0 0 16px;
+        }
+
+        #message-container {
+            padding-top: 10px;
+        }
+        
+        .radio-title {
+            font-size: 16px;
+            font-weight: normal;
+        }
+    </style>
+  </head>
+
+  <body>
+    <main>
+        <form>
+            <div>
+                <label for="name">Name:</label>
+                <input
+                    id="name"
+                    type="text"
+                    name="name"
+                    required
+                />
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input
+                    id="email"
+                    name="email"
+                    required
+                    type="email"
+                />
+            </div>
+            <div>
+                <h2 class="radio-title">Language:</h2>
+                <div>
+                    <input id="spanish" name="language" type="radio" value="spanish" />
+                    <label for="spanish">Spanish</label>
+                </div>
+                    <input id="english" name="language" type="radio" value="english" />
+                    <label for="english">English</label>
+                <div>
+                    <input id="atlantean" name="language" type="radio" value="atlantean" />
+                    <label for="atlantean">Atlantean</label>
+                </div>
+            </div>
+            <div id="message-container">
+                <label for="message">Your message:</label>
+                <br>
+                <textarea
+                    cols="30"
+                    id="message"
+                    maxlength="300"
+                    name="message"
+                    required
+                    rows=5
+                ></textarea>
+            </div>
+            <!--submit and reset buttons-->
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </main>
+  </body>
+</html>
